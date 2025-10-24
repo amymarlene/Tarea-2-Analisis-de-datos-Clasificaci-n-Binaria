@@ -10,12 +10,12 @@ Este proyecto analiza el dataset **"Lifestyle and Sleep Patterns"** de Kaggle, e
 
 Se realiza un **flujo completo de análisis de datos**, incluyendo:
 
-- Limpieza y exploración (EDA): Se realiza EDA y transformación inicial para asegurar consistencia de datos y preparar el dataset para análisis estadístico y modelado, evitando errores por tipos incorrectos o datos faltantes.
-- Filtrado de outliers: Se elimina valores extremos para mejorar estabilidad de estadísticas y modelos predictivos, evitando que datos atípicos distorsionen resultados.
-- Creación de variable binaria de estrés (**stress_binary**): La variable binaria es más útil para clasificación y permite entrenar modelos predictivos de manera clara.
-- Análisis univariante y bivariante con gráficos: Permite entender la distribución y concentración de datos, identificar patrones y preparar estrategias de filtrado y análisis bivariante. Identifica qué variables están fuertemente asociadas al estrés, permitiendo priorizar las más relevantes en modelos predictivos.
-- Matriz de correlación: Se eliminan variables redundantes o con menos relevancia, manteniendo las más representativas para evitar multicolinealidad.
-- División train/test lista para modelado predictivo: La estratificación asegura que la proporción de la variable objetivo se mantenga, evitando sesgos en modelos predictivos.
+- **Limpieza y exploración (EDA)**: Se realiza EDA y transformación inicial para asegurar consistencia de datos y preparar el dataset para análisis estadístico y modelado, evitando errores por tipos incorrectos o datos faltantes.
+- **Filtrado de outliers**: Se elimina valores extremos para mejorar estabilidad de estadísticas y modelos predictivos, evitando que datos atípicos distorsionen resultados.
+- **Creación de variable binaria de estrés** (**stress_binary**): La variable binaria es más útil para clasificación y permite entrenar modelos predictivos de manera clara.
+- **Análisis univariante y bivariante con gráficos**: Permite entender la distribución y concentración de datos, identificar patrones y preparar estrategias de filtrado y análisis bivariante. Identifica qué variables están fuertemente asociadas al estrés, permitiendo priorizar las más relevantes en modelos predictivos.
+- **Matriz de correlación**: Se eliminan variables redundantes o con menos relevancia, manteniendo las más representativas para evitar multicolinealidad.
+- **División train/test lista para modelado predictivo**: La estratificación asegura que la proporción de la variable objetivo se mantenga, evitando sesgos en modelos predictivos.
 
 **Dataset original:** [Kaggle - Lifestyle and Sleep Patterns](https://www.kaggle.com/datasets/minahilfatima12328/lifestyle-and-sleep-patterns)
 
