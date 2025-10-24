@@ -125,7 +125,3 @@ Analizar la relación entre hábitos de vida y niveles de estrés, preparando lo
 - Librerías: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`  
 - Google Colab recomendado  
 
-Instalación rápida:
-
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn
