@@ -1,86 +1,131 @@
-Análisis de Datos: Estilo de Vida y Patrones de Sueño
-📘 Descripción
+# 🧠 **Análisis de Datos: Estilo de Vida y Patrones de Sueño**
 
-Este proyecto analiza el dataset "Lifestyle and Sleep Patterns" de Kaggle, enfocándose en cómo los hábitos de vida afectan los niveles de estrés. El análisis incluye limpieza, exploración, visualización y preparación de datos para modelado predictivo.
+![Python](https://img.shields.io/badge/Python-3.11-blue.svg) ![Colab](https://img.shields.io/badge/Colab-Yes-brightgreen.svg) ![Dataset](https://img.shields.io/badge/Dataset-374%20filas%2C%2012%20columnas-orange.svg)
 
-Dataset original: Kaggle - Lifestyle and Sleep Patterns
+---
 
-🎯 Objetivo
+## **📘 Descripción**
 
-Estudiar la relación entre:
+Este proyecto analiza el dataset **"Lifestyle and Sleep Patterns"** de Kaggle, explorando cómo los hábitos de vida afectan los niveles de estrés.  
 
-Horas y calidad de sueño
+Se realiza un **flujo completo de análisis de datos**, incluyendo:
 
-Nivel de actividad física y pasos diarios
+- Limpieza y exploración (EDA)  
+- Filtrado de outliers  
+- Creación de variable binaria de estrés (**stress_binary**)  
+- Análisis univariante y bivariante con gráficos  
+- Matriz de correlación  
+- División train/test lista para modelado predictivo  
 
-Presión arterial, frecuencia cardiaca y categoría de IMC
+**Dataset original:** [Kaggle - Lifestyle and Sleep Patterns](https://www.kaggle.com/datasets/minahilfatima12328/lifestyle-and-sleep-patterns)
 
-Presencia de trastornos del sueño
+---
 
-con los niveles de estrés y generar un dataset listo para modelado.
+## **🎯 Objetivo**
 
-🗂 Estructura del Notebook
+Analizar la relación entre hábitos de vida y niveles de estrés, preparando los datos para un **modelo predictivo**.
 
-Librerías: pandas, numpy, matplotlib, seaborn, scikit-learn.
+**Variables clave:**
 
-Subir y cargar CSV: carga automática en Colab.
+- Horas y calidad de sueño  
+- Nivel de actividad física y pasos diarios  
+- Presión arterial, frecuencia cardiaca y categoría de IMC  
+- Presencia de trastornos del sueño  
 
-Exploración inicial: dimensiones, tipos de datos y nulos.
+---
 
-Transformación categórica: convierte variables a tipo category.
+## **🗂 Estructura del Notebook**
 
-EDA univariante: histogramas y estadísticas descriptivas.
+<details>
+<summary>📌 **Ver estructura completa**</summary>
 
-Filtrado de outliers: método IQR para valores extremos.
+### **1️⃣ Librerías**  
+- pandas, numpy, matplotlib, seaborn, scikit-learn  
 
-Variable objetivo binaria: stress_binary (0 = moderado, 1 = alto).
+### **2️⃣ Subida y carga del CSV**  
+- Desde Google Colab  
 
-Análisis bivariante: gráficos que comparan estrés con otras variables.
+### **3️⃣ Exploración inicial**  
+- Filas, columnas, tipos de datos y valores nulos  
 
-Matriz de correlación: relaciones entre variables numéricas.
+### **4️⃣ Transformación de columnas categóricas**  
+- Convertir variables a tipo `category`  
 
-División Train/Test: dataset estratificado listo para modelado.
+### **5️⃣ Análisis univariante**  
+- Estadísticas descriptivas y histogramas  
 
-📊 Ejemplos de Gráficos
+### **6️⃣ Filtrado de outliers (IQR)**  
+- Eliminación de valores extremos  
 
-Sleep Duration vs Estrés
+### **7️⃣ Variable objetivo binaria**  
+- Creación de **stress_binary**  
 
-Physical Activity Level vs Estrés
+### **8️⃣ Análisis bivariante con gráficos**  
+- Comparación de estrés con otras variables  
 
-Sleep Disorder vs Estrés
+### **9️⃣ Matriz de correlación**  
+- Identificación de relaciones entre variables numéricas  
 
-Matriz de correlación
+### **🔟 División Train/Test**  
+- Estratificada y exportación a CSV  
 
-(Estas imágenes son ejemplos; en tu repositorio puedes subir capturas de tus gráficos generados en Colab.)
+### **1️⃣1️⃣ Descarga de CSV**  
+- Guardar archivos localmente desde Colab  
 
-💡 Conclusiones
+</details>
 
-Menos horas de sueño y menor actividad física aumentan el riesgo de estrés.
+---
 
-Trastornos del sueño se asocian a estrés alto.
+## **📊 Ejemplos de Gráficos**
 
-El filtrado de outliers mejora la estabilidad del análisis.
+<details>
+<summary>📌 **Ver gráficos**</summary>
 
-La división estratificada asegura proporciones balanceadas en train/test.
+**Sleep Duration vs Estrés**  
 
-🧰 Requisitos
+<img width="701" height="479" alt="image" src="https://github.com/user-attachments/assets/a1b1f511-d814-4c71-bedf-ef1dee40de90" />
 
-Python 3.x
 
-Librerías: pandas, numpy, matplotlib, seaborn, scikit-learn
+**Physical Activity Level vs Estrés**  
 
-Google Colab recomendado para ejecución y subida de archivos.
+<img width="696" height="479" alt="image" src="https://github.com/user-attachments/assets/affe6add-184b-484a-8982-c2ecbdcfd44a" />
 
-Instalación:
 
+**Sleep Disorder vs Estrés**  
+
+<img width="696" height="479" alt="image" src="https://github.com/user-attachments/assets/822352f2-c1f3-438f-b6ba-695bac56865d" />
+
+
+**Matriz de correlación**  
+
+<img width="952" height="841" alt="image" src="https://github.com/user-attachments/assets/fdfab5e6-64e3-435a-95e1-d244ec33b08f" />
+
+
+</details>
+
+---
+
+## **💡 Conclusiones**
+
+<details>
+<summary>📌 **Ver conclusiones**</summary>
+
+- Dormir menos horas y tener menor actividad física aumenta el riesgo de estrés  
+- Trastornos del sueño están fuertemente asociados a estrés alto  
+- Filtrado de outliers mejora la estabilidad y confiabilidad del análisis  
+- División estratificada asegura proporciones balanceadas entre train/test  
+
+</details>
+
+---
+
+## **🧰 Requisitos**
+
+- Python 3.x  
+- Librerías: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`  
+- Google Colab recomendado  
+
+Instalación rápida:
+
+```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
-
-⚡ Uso
-
-Abrir notebook en Google Colab.
-
-Ejecutar celda de subida de CSV y seleccionar el archivo descargado de Kaggle.
-
-Ejecutar celdas en orden para realizar EDA, limpieza, visualización y división Train/Test.
-
-Obtendrás train.csv y test.csv listos para modelado.
