@@ -1,28 +1,13 @@
-🧠 **Análisis de Datos: Estilo de Vida y Patrones de Sueño**
+Análisis de Datos: Estilo de Vida y Patrones de Sueño
+📘 Descripción
 
-
-
-📘 **Descripción**
-
-Este proyecto analiza el dataset "Lifestyle and Sleep Patterns" de Kaggle, explorando cómo los hábitos de vida afectan los niveles de estrés. Se realiza un flujo completo de análisis:
-
-Limpieza y exploración (EDA)
-
-Filtrado de outliers
-
-Creación de variable binaria de estrés (stress_binary)
-
-Análisis univariante y bivariante con gráficos
-
-Matriz de correlación
-
-División train/test lista para modelado predictivo
+Este proyecto analiza el dataset "Lifestyle and Sleep Patterns" de Kaggle, enfocándose en cómo los hábitos de vida afectan los niveles de estrés. El análisis incluye limpieza, exploración, visualización y preparación de datos para modelado predictivo.
 
 Dataset original: Kaggle - Lifestyle and Sleep Patterns
 
-🎯 **Objetivo**
+🎯 Objetivo
 
-Analizar la relación entre hábitos de vida y estrés, preparando los datos para un modelo predictivo. Variables clave:
+Estudiar la relación entre:
 
 Horas y calidad de sueño
 
@@ -32,31 +17,31 @@ Presión arterial, frecuencia cardiaca y categoría de IMC
 
 Presencia de trastornos del sueño
 
-🗂 **Estructura del Notebook**
+con los niveles de estrés y generar un dataset listo para modelado.
 
-Librerías
+🗂 Estructura del Notebook
 
-Subida y carga del CSV
+Librerías: pandas, numpy, matplotlib, seaborn, scikit-learn.
 
-Exploración inicial
+Subir y cargar CSV: carga automática en Colab.
 
-Transformación de columnas categóricas
+Exploración inicial: dimensiones, tipos de datos y nulos.
 
-Análisis univariante
+Transformación categórica: convierte variables a tipo category.
 
-Filtrado de outliers (IQR)
+EDA univariante: histogramas y estadísticas descriptivas.
 
-Creación de variable binaria stress_binary
+Filtrado de outliers: método IQR para valores extremos.
 
-Análisis bivariante con gráficos
+Variable objetivo binaria: stress_binary (0 = moderado, 1 = alto).
 
-Matriz de correlación
+Análisis bivariante: gráficos que comparan estrés con otras variables.
 
-División Train/Test
+Matriz de correlación: relaciones entre variables numéricas.
 
-Descarga de CSV para tu PC
+División Train/Test: dataset estratificado listo para modelado.
 
-📊 **Ejemplos de Gráficos**
+📊 Ejemplos de Gráficos
 
 Sleep Duration vs Estrés
 
@@ -66,36 +51,36 @@ Sleep Disorder vs Estrés
 
 Matriz de correlación
 
-(Reemplaza estas imágenes con capturas reales de tus gráficos en Colab antes de subir a GitHub.)
+(Estas imágenes son ejemplos; en tu repositorio puedes subir capturas de tus gráficos generados en Colab.)
 
-💡 **Conclusiones**
+💡 Conclusiones
 
-Dormir menos y tener menor actividad física aumenta el riesgo de estrés.
+Menos horas de sueño y menor actividad física aumentan el riesgo de estrés.
 
 Trastornos del sueño se asocian a estrés alto.
 
-Filtrado de outliers mejora la estabilidad del análisis.
+El filtrado de outliers mejora la estabilidad del análisis.
 
-División estratificada mantiene proporciones balanceadas entre train/test.
+La división estratificada asegura proporciones balanceadas en train/test.
 
-🧰 **Requisitos**
+🧰 Requisitos
 
 Python 3.x
 
 Librerías: pandas, numpy, matplotlib, seaborn, scikit-learn
 
-Google Colab recomendado
+Google Colab recomendado para ejecución y subida de archivos.
 
-Instalación rápida:
+Instalación:
 
 pip install pandas numpy matplotlib seaborn scikit-learn
 
-⚡ **Uso**
+⚡ Uso
 
-Abrir el notebook en Google Colab.
+Abrir notebook en Google Colab.
 
-Ejecutar la celda de subida de CSV.
+Ejecutar celda de subida de CSV y seleccionar el archivo descargado de Kaggle.
 
-Ejecutar todas las celdas en orden.
+Ejecutar celdas en orden para realizar EDA, limpieza, visualización y división Train/Test.
 
-Se generarán train.csv y test.csv listos para modelado.
+Obtendrás train.csv y test.csv listos para modelado.
